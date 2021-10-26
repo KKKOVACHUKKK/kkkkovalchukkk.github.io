@@ -1,0 +1,1423 @@
+html{
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+/* Header */
+
+.header{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #1C1814;
+}
+
+.header__container{
+  width: 100%;
+  max-width: 1320px;
+  height: 125px;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+}
+
+.header__nav-list{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.header-nav-list__item:not(:last-child){
+  margin-right: 48px;
+}
+
+.nav-list-item__link{
+  display: flex;
+  flex-direction: row;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.78px;
+  color: #fff;
+  transition-property: color, transform;
+  transition-duration: 0.2s;
+}
+
+.header__logo{
+  width: 72px;
+  height: 60px;
+}
+
+.header__logo-link{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__links-list{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.links-list-item__link{
+  display: flex;
+  flex-direction: row;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.78px;
+  color: #fff;
+  transition-property: color, transform;
+  transition-duration: 0.2s;
+}
+
+.links-list__item:not(:last-child){
+  margin-right: 48px;
+}
+
+.item-link__icon{
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translateY(-4px);
+}
+
+.find-icon{
+  background-image:url(../img/find-icon.svg) ;
+}
+
+.cart-icon{
+  background-image:url(../img/cart-icon.svg) ;
+}
+
+.nav-list-item__link:hover, .links-list-item__link:hover{
+  color:#C99E71;
+  transform: scale(1.05);
+}
+
+/* Hero */
+
+.section-hero{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:url(../img/hero-bg.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.section-hero__container{
+  width: 100%;
+  max-width: 1320px;
+  height: calc(864px - 125px);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+}
+
+.section-hero__content{
+  margin-top: 147px;
+  margin-left: 75px;
+}
+
+.section-hero__title{
+  max-width: 529px;
+  display: inline-block;
+  margin-bottom: 32px;
+  font-family: "Righteous";
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 93.6px;
+  color: #fff;
+}
+
+.section-hero__descrip{
+  margin: 0px 0px 64px 0px;
+  max-width: 511px;
+  font-family: "Urbanist";
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.section-hero__link-btn{
+  display: inline-block;
+  padding: 24px 40px;
+  text-transform: uppercase;
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21.78px;
+  border-radius: 5px;
+  color: #fff;  
+  background-color: #C99E71;
+  transition-property: background-color, transform;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+}
+
+.section-hero__link-btn:hover{
+  background-color: #855a2d;
+  transform: scale(0.95);
+}
+
+/* Rules */
+
+.section-rules{
+  width: 100%;
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background-color: #14110E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-rules__container{
+  display: flex;
+  width: 100%;
+  max-width: 1170px;
+}
+
+.section-rules__list{
+  width: 100%;
+  max-width: 1170px;
+  max-height: 474px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.section-rules-list__item:not(:last-child){
+  margin-right: 36px;
+}
+
+.section-rules__text{
+  max-width: 366px;
+  margin-bottom: 24px;
+  font-family: "Righteous";
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29.8px;
+  color: #fff;
+}
+
+.rules-list-number{
+  color: #c99e71;
+}
+
+.rules-list-image{
+  width: 100%;
+  height: 100%;
+  max-width: 366px;
+  max-height: 420px;
+}
+
+/* Section History */
+
+.section-history{
+  width: 100%;
+  padding-bottom: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #14110E;
+}
+
+.section-history__container{
+  display: flex;
+  width: 100%;
+  max-width: 1170px;
+  align-items: center;
+}
+
+.section-history__content{
+  display: flex;
+}
+
+.images-history__left-side{
+  margin-right: 32px;
+  max-height: 635px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.images__right-side{
+  margin-right: 32px;
+}
+
+.left-side__image{
+  width: 298px;
+  height: 302px;
+}
+
+.right-side__image{
+  width: 298px;
+  height: 635px;
+}
+
+.section-history__text{
+  padding: 120px 56px 0 56px;
+}
+
+.section-history__non-main-title{
+  margin-bottom: 12px;
+  display: block;
+  font-family: "Urbanist";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #c99e71;
+}
+
+.section-history__main-title{
+  max-width: 398px;
+  margin-bottom: 36px;
+  display: block;
+  text-align: left;
+  font-family: "Righteous";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 62.4px;
+  color: #fff;
+  white-space:pre-line;
+}
+
+.scetion-history__descrip{
+  margin: 0;
+  font-family: "Urbanist";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28.8px;
+  color: #fff;
+}
+
+/* Section Products */
+
+.section-products{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #14110E;
+}
+.section-products__container{
+  width: 100%;
+  max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-products__non-main-title{
+  display: block;
+  margin-bottom: 12px;
+  font-family: "Urbanist";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #c99e71;
+}
+
+.section-products__main-title{
+  display: block;
+  margin-bottom: 56px;
+  text-align: left;
+  font-family: "Righteous";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 62.4px;
+  color: #fff;
+}
+
+.section-products__list{
+  margin: 0 0 56px 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.section-products-list__item{
+  width: 366px;
+  min-height: 579px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #121315;
+}
+
+.section-products-list__item:not(:last-child){
+  margin-right: 36px;
+}
+
+.products-image{
+  width: 270px;
+  height: 343px;
+  margin-top: 48px;
+  margin-bottom: 36px;
+}
+
+.products-title{
+  max-width: 245px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: "Righteous";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29.8px;
+  color: #fff;
+}
+
+.products-title--more-mrgnbt{
+  margin-bottom: 38px;
+}
+
+.products-link-btn{
+  width: 169px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  font-family: "Urbanist";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #fff;
+  transition-property: background-color, transform;
+  transition-duration: 0.2s;
+  background-color: #C99E71;
+}
+
+.products-link-btn:hover{
+  background-color: #855a2d;
+  transform: scale(0.9);
+}
+
+.btn-icon{
+  width: 24px;
+  height: 24px;
+  margin-left: 20px;
+  margin-right: 12px;
+  display: inline-block;
+  background: url(../img/addtocart-icon.svg) no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.products-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products-name{
+  display:flex;
+  padding-right: 40px;
+  margin-bottom: 20px;
+  align-items: center;
+  font-family: "Urbanist";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: #c99e71;
+  text-transform: uppercase;
+}
+.products-name::before{
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(../img/rating-zero-icon.svg) no-repeat;
+  background-size: contain;
+  transform: translateX(185px);
+}
+
+.products-name::after{
+  content: "";
+  margin-left: 13px;
+  width: 92px;
+  height: 20px;
+  background: url(../img/rating-full-icon.svg) repeat;
+  background-repeat: space;
+}
+
+.products-price{
+  max-width: 169px;
+  display: inline-block;
+  font-family: "Urbanist";
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #fff;
+}
+
+.product-price--brown{
+  color: #c99e71;
+}
+
+.section-products__link{
+  padding: 20px 36px;
+  margin-bottom: 140px;
+  text-transform: uppercase;
+  display: block;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 21.78px;
+  transition-property: background-color, transform;
+  transition-duration: 0.2s;
+  color: #fff;
+  background-color: #c99e71;
+}
+.section-products__link:hover{
+  background-color: #855a2d;
+  transform: scale(0.9);
+}
+/* Article */
+
+.coffee-machine{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #14110E;
+}
+
+.coffee-machine__container{
+  width: 100%;
+  max-width: 1170px;
+  display: flex;
+  flex-direction: row;
+  background-color: #1C1814;
+}
+
+.coffee-machine__image{
+  padding: 85.5px 160px 85.5px 169px;
+}
+
+.coffee-machine__content{
+  margin-top: 72px;
+}
+
+.coffee-machine__title{
+  margin-bottom: 36px;
+  display: inline-block;  
+  font-family: "Righteous";
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 62.4px;
+  color: #fff;
+  white-space: pre-line;
+}
+
+.coffee-machine__text{
+  max-width: 535px;
+  margin: 0px 0px 36px 0px;
+  font-family: "Urbanist";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28.8px;
+  color: #fff;
+}
+
+.coffee-machine__link{
+  max-width: 143px;
+  display: inline-block;
+  padding: 20px 36px;
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21.78px;
+  color: #fff;
+  background-color: #C99E71;
+  text-transform: uppercase;
+  transition-property: background-color, transform;
+  transition-duration: 0.2s;
+}
+
+.coffee-machine__link:hover{
+  background-color: #855a2d;
+  transform: scale(0.9);
+}
+
+/* Section Menu */
+
+.section-menu{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #14110E;
+}
+
+.section-menu__container{
+  width: 100%;
+  max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-menu__non-main-title{
+  display: block;
+  margin-top: 140px;
+  margin-bottom: 12px;
+  font-family: "Urbanist";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #c99e71;
+}
+.section-menu__main-title{
+  display: block;
+  margin-bottom: 56px;
+  text-align: left;
+  font-family: "Righteous";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 62.4px;
+  color: #fff;
+}
+
+.section-menu__list{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.menu__item{
+  width: 100%;
+  max-width: 565px;
+  min-height: 120px;
+  margin-bottom: 36px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  outline: 1px solid #32323D;
+  transition-property:background-color;
+  transition-duration: 0.2s;
+}
+
+.menu__item:hover{  
+  background-color: rgba(201, 158, 113, 0.2);
+}
+
+.menu-item__image{
+  width: 72px;
+  height: 72px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.menu-item-content{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menu-item__title{
+  max-width: 256px;
+  padding: 7px 0;
+  font-family: "Righteous";
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29.8px;
+  color: #fff;
+}
+
+.menu-item__price{
+  margin-left: auto;
+  padding-right: 24px;
+  font-family: "Urbanist";
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #C99E71;
+}
+
+/* Section Testimonial */
+
+.section-testim{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #14110E;
+}
+
+.section-testim__container{
+  width: 100%;
+  max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-testim__non-main-title{
+  margin-top: 104px;
+  margin-bottom: 12px;
+  display: block;
+  font-family: "Urbanist";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #c99e71;
+}
+
+.section-testim__main-title{
+  margin-bottom: 56px;
+  display: block;
+  font-family: "Righteous";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 62.4px;
+  color: #fff;
+}
+
+.section-testim__list{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+}
+
+.section-testim-list__item{
+  width: 100%;
+  max-width: 565px;
+  min-height: 305px;
+  display: flex;
+  background-color: #1C1814;
+}
+.section-testim-list__item:not(:last-child){
+  margin-right: 40px;
+}
+
+.testim-item__content{
+  padding: 40px 40px 37px 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.testim-item__profile{
+  margin-right: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.testim-item__avatar{
+  width: 129px;
+  height: 149px;
+  margin-bottom: 28px;
+  display: inline-block;
+  background: url(../img/profile-avatar.jpg) no-repeat;
+  background-size: contain;
+}
+
+.testim-item__name{
+  max-width: 129px;
+  margin-bottom: 4px;
+  font-family: "Urbanist";
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #fff;
+}
+
+.testim-item__proffesion{
+  max-width: 129px;
+  font-family: "Urbanist";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25.2px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+.testim-item_testimonial-text{
+  max-width: 332px;
+  padding: 0;
+  margin: 0;
+  font-family: "Urbanist";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28.8px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.testim-item_testimonial-text::after{
+  width: 116px;
+  height: 20px;
+  margin-top: 60px;
+  margin-left: auto;
+  display:block;
+  content: "";
+  background:url(../img/profile-star.png);
+  background-repeat: space;
+}
+
+.section-testim__nav{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section-testim__nav-links{
+  margin-top: 36px;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+}
+.testim-nav-links__left-link{
+  margin-right: 16px;
+}
+
+.section-testim__number-people{
+  margin-top: 36px;
+  margin-bottom: 20px;
+  font-family: "Urbanist";
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: #c99e71;
+}
+
+.section-testim__progress-bar{
+  width: 120px;
+  height: 4px;
+  display: inline-block;
+  align-self: flex-start;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.section-testim__progress-bar::before{
+  width: 50px;
+  height: 4px;
+  content: "";
+  display: inline-block;
+  background-color: #C99E71;
+  transform: translateY(-6px);
+}
+
+.testim-nav-links__left-link, .testim-nav-links__right-link{
+  width: 56px;
+  height: 56px;
+  display: inline-block;
+  border-radius: 50%;
+  background:url(../img/arrow-right.png) no-repeat;
+  background-position:center;
+  background-color: #121315;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+}
+
+.testim-nav-links__left-link:hover, .testim-nav-links__right-link:hover{
+  background-color: #C99E71;
+}
+.testim-nav-links__right-link{
+  transform: scale(-1, 1);
+}
+
+/* Section News */
+
+.section-news{
+  width: 100%;
+  padding-bottom: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #14110E;
+}
+
+.section-news__container{
+  width: 100%;
+  max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-news__non-main-title{
+  margin-top: 140px;
+  margin-bottom: 12px;
+  font-family: "Urbanist";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.6px;
+  color: #c99e71;
+}
+
+.section-news__main-title{
+  margin-bottom: 56px;
+  font-family: "Righteous";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 62.4px;
+  color: #fff;
+}
+
+.section-news-list{
+  margin-top: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.news-list__item{
+  max-width: 366px;
+  background-color: #1C1814;
+}
+
+.news-list__item:not(:last-child){
+  margin-right: 36px;
+}
+
+.news-list-item__image{
+  max-width: 366px;
+  max-height: 360px;
+}
+
+.section-news-list__content{
+  padding: 20px 24px 24px 24px;
+}
+
+.news-list-item__proflile{
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.news-list-item__name{
+  font-family: "Urbanist";
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #fff;
+}
+
+.news-list-item__name--orange{
+  color: #c99e71;
+}
+
+.news-list-item__date{
+  font-family: "Urbanist";
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #fff;
+}
+
+.news-list-item__title{
+  max-width: 285px;
+  margin-bottom: 32px;
+  display: block;
+  font-family: "Righteous";
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.news-list-item__link{
+  margin-right: 8px;
+  flex-direction: row;
+  font-family: "Urbanist";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: #c99e71;
+  transition-property: filter, transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+
+}
+
+.news-list-item__link:hover{
+  transform: scale(1.1);
+  filter:drop-shadow(0px 0px 5px #f2c492)
+}
+
+.news-item-link__icon{
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background: url(../img/news-section-arrow.svg) no-repeat;
+  background-size: contain;
+  transform: translateY(6px);
+}
+
+/* Footer */
+
+.footer{
+  width: 100%;
+  padding-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #14110E;
+}
+
+.footer__container{
+  width: 100%;  
+  max-width: 1170px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer__logo-link{
+  margin: 0 auto 0 0;
+}
+
+.footer__nav-list{
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  display: flex;
+}
+
+.nav-list-item__link--mo-fsize{
+  font-size: 20px;
+}
+
+.nav-list__item--mo-mrgn{
+  margin-right: 40px;
+}
+
+.form{
+  margin-left: auto;
+  max-width: 328px;
+  max-height: 72px;
+  padding: 12px 12px 12px 28px;
+  border-radius: 36px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #1C1814;
+}
+.adaptive-form{
+  display: none;
+}
+
+.footer-input{
+  padding: 0;
+  margin: 0;
+  border:transparent;
+  font-family: "Urbanist";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28.8px;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: transparent;
+
+} 
+
+.footer-input:focus{
+  outline: transparent;
+}
+
+.form-btn{
+  width: 48px;
+  height: 48px;
+  margin-left: auto;
+  padding: 0;
+  border-radius: 50%;
+  border:0px;
+  background-color: #C99E71;
+  transition-property: box-shadow, transform;
+  transition-duration: 0.2s;
+}
+.form-btn:hover{
+  box-shadow: 0px 0px 20px #5a3f22;
+  transform: scale(1.1);
+}
+
+.forn-btn__icon{
+  width: 24px;
+  height: 24px; 
+  display: inline-block;
+  background:url(../img/arrow-right.png) no-repeat;
+  background-position: center;
+  transform: scale(-1, 1);
+}
+
+/* Copyrights */
+
+.section-copyrights{
+  width: 100%;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1C1814;
+}
+
+.section-copyright__text{
+  font-family: "Urbanist";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25.2px;
+  color: #fff;
+}
+
+/* Media */
+
+@media (max-width:1330px) {
+  .header__container{
+    padding:0px 20px;
+  }
+}
+@media (max-width:1184px) {
+  .section-rules{
+    padding-bottom: 100px;
+  }
+
+  .section-rules__container{
+    height:100%;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+  .section-rules__list{
+    max-height: none;
+    flex-direction: column;
+  }
+  .section-rules-list__item{
+    margin-right: 0;
+  }
+  .section-rules-list__item{
+    margin-right: 0 !important;
+  }
+  .section-rules-list__item:not(:last-child){
+    margin-bottom: 40px;
+  }
+  .section-rules__text{
+    margin-bottom: 15px;
+  }
+  .section-history{
+    padding-bottom: 70px;
+  }
+  .section-history__container{
+    flex-direction: column;
+  }
+  .images-history__left-side{
+    margin: 0;
+    flex-direction: row;
+  }
+  .left-side__image{
+    margin-right: 20px;
+  }
+  .images__right-side{
+    display: none;
+  }
+  .section-history__text{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-history__main-title{
+    white-space:normal;
+    text-align: center;
+  }
+  .section-products__list{
+    flex-direction: column;
+  }
+  .section-products-list__item{
+    margin-right: 0px !important;
+    margin-bottom: 30px;
+  }
+  .section-products__link{
+    margin-bottom: 70px;
+  }
+
+  .coffee-machine__container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .coffee-machine__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .coffee-machine__title{
+    align-items: center;
+    white-space: normal;
+  }
+  .coffee-machine__image{
+    width: 226px;
+    height: 359px;
+    padding-bottom: 0;
+  }
+  .menu-item-content{
+    margin-right: 20px;
+    flex-direction: column;
+  }
+  .menu-item__price{
+    padding: 0;
+    margin: 0 auto;
+  }
+  .section-testim__non-main-title{
+    margin-top: 50px;
+  }
+  .section-menu__list{
+    flex-direction: column;
+  }
+  .section-testim__list{
+    margin-right: 0;
+    flex-direction: column;
+  }
+  .section-testim-list__item{
+    margin-right: 0 !important;
+    margin-bottom: 30px;
+  }
+  .section-testim__nav{
+    display: none;
+  }
+  .section-testim__progress-bar{
+    display: none;
+  }
+  .section-news__non-main-title{
+    margin-top: 70px;
+  }
+  .section-news-list{
+    flex-direction: column;
+  }
+  .news-list__item{
+    margin-right: 0 !important;
+    margin-bottom: 30px;
+  }
+  .footer{
+    padding-bottom: 20px;
+  }
+  .footer__logo-link{
+    display: none;
+  }
+  .footer-nav{
+    padding: 40px 0;
+    margin: 0 auto;
+  }
+  .form{
+    display: none;
+  }
+  .adaptive-form{
+    display: inline-block;
+    margin:0 auto;
+    width: 80%;
+    max-width: 80%;
+    max-height: 72px;
+    padding: 12px 12px 12px 28px;
+    border-radius: 36px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #1C1814;
+  }
+}
+
+@media (max-width:1024px) {
+  .header-link-icon{
+    display: none;
+  }
+  .header__links-list{
+    display: none;
+  }
+  .header__logo-link{
+    margin-right: 0;
+  }
+
+  }
+
+@media (max-width:768px) {
+  .images-history__left-side{
+    display: flex;
+    flex-direction: column;
+  }
+  .left-side__image{
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .section-history__text{
+    padding-top: 30px; 
+  }
+  .coffee-machine__image{
+    padding: 0;
+    padding-top: 40px;
+  }
+  .coffee-machine__title{
+    font-size: 30px;
+  }
+
+  .coffee-machine__text{
+    padding: 0px;
+  }
+
+  .adaptive-form{
+    margin-top: 20px;
+  }
+  .section-news{
+    padding: 0;
+  }
+  .footer-nav{
+    padding: 0;
+  }
+  .footer__nav-list{
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-list__item, .nav-list__item--mo-mrgn{
+    display: none;
+  }
+  .nav-list__item--mrgn{
+    display: none;
+  }
+}
+@media (max-width:579px){
+  .section-hero__title{
+
+  }
+  .coffee-machine__title{
+    padding: 0 20px;
+    text-align: center;
+  }
+  .coffee-machine__text{
+    padding: 0 20px;
+    text-align: center;
+  }
+  .section-menu__main-title{
+    text-align: center;
+  }
+  .section-testim__main-title{
+    text-align: center;
+  }
+  .section-news__main-title{
+    text-align: center;
+  }
+}
+@media (max-width:555px) {
+  .header__container{
+    flex-direction: column;
+    max-height: none;
+    height: 100%;
+  }
+  .nav{
+    margin: 40px 0;
+  }
+  .header__logo-link{
+    margin: 10px auto;
+  }
+  .section-products__main-title{
+    text-align: center;
+  }
+}
+  @media (max-width:460px) {
+    .section-hero__title{
+      font-size: 60px;
+    }
+    .section-hero__descrip{
+      font-size: 16px;
+    }
+    .section-hero__content{
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+    .header__nav-list{
+      flex-direction: column;
+    }
+    .header-nav-list__item{
+      margin-right: 0;
+    }
+    .header-nav-list__item:not(:last-child){
+      margin-bottom: 40px;
+    }
+    .section-rules{
+      padding-top: 40px;
+    }
+    .section-rules__text{
+      text-align: center;
+    }
+    .section-history__main-title{
+      font-size: 40px;
+
+    }
+    .section-products__main-title{
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    .section-products-list__item{
+      width: 310px;
+    }
+  }
+  @media (max-width:320px) {
+    .section-news-list{
+      width: 310px;
+    }
+    .section-products__list{
+      width: 310px;
+    }
+    .section-rules-list__item{
+      width: 310px;
+    }
+    .section-products-list__item{
+      width: 300px;
+    }
+    .testim-item__content{
+      padding: 18px 8px;
+    }
+    .section-menu__main-title{
+      padding: 0 20px;
+    }
+    .section-testim__list{
+      width: 310px;
+    }
+    .news-list-item__image{
+      width: 310px;
+    }
+    .section-news-list{
+      width: 310px;
+    }
+  }
+/* Fonts */
+
+@font-face {
+  font-family: "Inter";
+  font-weight: bold;
+  src: url(../fonts/Inter-Bold.woff), url(../fonts/Inter-Bold.woff2);
+}
+
+@font-face {
+  font-family: "Righteous";
+  font-weight: normal;
+  src: url(../fonts/Righteous-Regular.woff), url(../fonts/Righteous-Regular.woff2);
+}
+
+@font-face {
+  font-family: "Urbanist";
+  font-weight: normal;
+  src: url(../fonts/Urbanist-Regular.woff), url(../fonts/Urbanist-Regular.woff2);
+}
